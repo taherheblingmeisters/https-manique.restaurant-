@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --color-manique-black: #000000;
+  --color-manique-gold: #a67c53;
+  --color-manique-forest: #0f6738;
+  --color-manique-vibrant: #169b39;
+  --color-manique-deep: #0a4525;
+  --color-manique-blue: #51a4da;
+  --color-manique-gray: #e9e8e8;
+}
+
+body {
+  background-color: var(--color-manique-black);
+  color: var(--color-manique-gray);
+  font-family: var(--font-sans);
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-manique-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-manique-deep);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-manique-gold);
+}
